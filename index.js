@@ -2,11 +2,11 @@ document.getElementById("spinButton").addEventListener("click", function() {
     let i = 1;
     let score;
     let a;
-
+    let number = document.getElementById("myInput").value;
     function numberchange() {
         if (i <= 10) {
-            a = Math.floor(Math.random() * 10000) + 2;
-            if (a == 10001) {
+            a = Math.floor(Math.random() * 100*number) + 2;
+            if (a == number*100 + 1) {
                 score = 999;
             } else {
                 score = Math.floor(a / 100) + 1;
@@ -20,4 +20,5 @@ document.getElementById("spinButton").addEventListener("click", function() {
     }
 
     numberchange();
+
 });
