@@ -11,7 +11,7 @@ document.getElementById("spinButton").addEventListener("click", function() {
         if (i <= 10) {
             a = Math.floor(Math.random() * 100*number) + 2;
             if (a == number*100 + 1) {
-                score = 999*number;
+                score = 999;
             } else {
                 score = Math.floor(a / 100) + 1;
             }
@@ -26,6 +26,7 @@ document.getElementById("spinButton").addEventListener("click", function() {
     numberchange();
 
 });
+
 
 
 
