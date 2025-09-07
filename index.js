@@ -2,7 +2,7 @@ document.getElementById("spinButton").addEventListener("click", function() {
     let i = 1;
     let score;
     let a;
-    let inputnumber = document.getElementById("myInput").value;
+    let inputnumber = document.getElementById("numInput").value;
     let number = inputnumer === "" ? 100 : Number(inputnumber);
     function numberchange() {
         if (i <= 10) {
@@ -23,5 +23,6 @@ document.getElementById("spinButton").addEventListener("click", function() {
     numberchange();
 
 });
+
 
 
