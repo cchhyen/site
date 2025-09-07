@@ -6,8 +6,8 @@ document.getElementById("spinButton").addEventListener("click", function() {
     let number = inputnumber === "" ? 100 : Number(inputnumber);
     function numberchange() {
         if (i <= 10) {
-            a = Math.floor(Math.random() * 100*inputnumber) + 2;
-            if (a == inputnumber*100 + 1) {
+            a = Math.floor(Math.random() * 100*number) + 2;
+            if (a == number*100 + 1) {
                 score = 999;
             } else {
                 score = Math.floor(a / 100) + 1;
@@ -23,6 +23,7 @@ document.getElementById("spinButton").addEventListener("click", function() {
     numberchange();
 
 });
+
 
 
 
