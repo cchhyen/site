@@ -4,13 +4,13 @@ document.getElementById("spinButton").addEventListener("click", function() {
     let a;
     let inputnumber = document.getElementById("numInput").value;
     let number;
-    inputnumber = inputnumer.trim()
+    inputnumber = inputnumber.trim()
     if (inputnumber == "") {number = 100}
     else {number = inputnumber}
     function numberchange() {
         if (i <= 10) {
             a = Math.floor(Math.random() * 100*number) + 2;
-            if (a == number*100 + 1) {score = 999;} 
+            if (a == number*100 + 1) {score = 999*number;} 
             else {score = Math.floor(a / 100) + 1;}
             document.getElementById("result").innerText = "결과: " + score;
             i = i + 1;
@@ -21,6 +21,7 @@ document.getElementById("spinButton").addEventListener("click", function() {
     numberchange();
 
 });
+
 
 
 
